@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Task Manager</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>Smart AI Task Manager</h1>
+
+<a href="/add">Add Task</a>
+
+<table>
+
+<tr>
+<th>Title</th>
+<th>Description</th>
+<th>Deadline</th>
+<th>Priority</th>
+</tr>
+
+{% for task in tasks %}
+
+<tr>
+<td>{{task[1]}}</td>
+<td>{{task[2]}}</td>
+<td>{{task[3]}}</td>
+<td>{{task[4]}}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>
