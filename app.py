@@ -4,7 +4,7 @@ import joblib
 
 app = Flask(__name__)
 
-model = joblib.load("priority_model.pkl")
+model = joblib.load("priority_model.pkl ")
 vectorizer = joblib.load("vectorizer.pkl")
 
 
